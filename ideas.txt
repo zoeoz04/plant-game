@@ -4,6 +4,8 @@ make plant objects
     brown - dead
     yellow - dying
     green - healthy 
+    last level is flower 
+  starts at healthy 
 
 make timer for round 
   round 1 - 30 sec
@@ -11,9 +13,30 @@ make timer for round
   round 3 - 90 sec 
   if time runs out - lose automatically - try again 
 
+make "flowers grown" area
+  update when you make a flower 
+
 make fly objects
   appear on leaf every 5 sec 
   click to make disappear 
+  if not clicked on:
+    leaf to yellow
+
+water flower 
+  click and drag water bucket 
+  if not clicked on:
+    leaf to yellow
+  if clicked on:
+    leaf up one level 
+    or flower 
+
+feed flower
+  jiggle mouse over? (might need to simlify)
+  if not fed:
+    leaf down level
+  if fed:
+    level plant up 
+
     
 ==========================================
 Plant game 
