@@ -13,6 +13,11 @@ function generateBug() {
     bug.style.top = Math.random() * (plant.clientHeight - 20) + 'px';
     document.getElementById('plant').appendChild(bug);
 
+    // Remove bug when clicked
+    bug.addEventListener('click', () => {
+        document.getElementById('plant').removeChild(bug);
+    });
+
     // Remove bug after a set time
     setTimeout(() => {
         document.getElementById('plant').removeChild(bug);
@@ -34,3 +39,4 @@ const timer = setInterval(() => {
         // End game logic here
     }
 }, 1000); // Update every second
+
