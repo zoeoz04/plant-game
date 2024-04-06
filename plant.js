@@ -34,8 +34,15 @@ function createBug() {
     var container = document.querySelector('.plant-area');
     var bug = document.createElement('div');
     bug.className = 'Bug-animation';
-    bug.style.top = Math.random() * (container.clientHeight - 20) + 'px';
-    bug.style.left = Math.random() * (container.clientWidth - 20) + 'px';
+    bug.style.position = 'absolute'; // Set position to absolute
+    bug.style.top = Math.random() * (container.clientHeight - 50) + 'px'; // Position bug randomly within plant area height
+    bug.style.left = Math.random() * (container.clientWidth - 50) + 'px'; // Position bug randomly within plant area width
+    bug.style.zIndex = '999'; // Set a high z-index to bring the bug to the front
+    var bugImage = document.createElement('img');
+    bugImage.src = 'ladybug.png'; // Path to your bug image
+    bugImage.style.width = '50px'; // Set the width of the image
+    bugImage.style.height = '50px'; // Set the height of the image
+    bug.appendChild(bugImage);
     container.appendChild(bug);
     
     bug.addEventListener('click', function() {
@@ -45,7 +52,7 @@ function createBug() {
 
 function startBugAnimation() {
     createBug(); // Create a bug immediately
-    bugInterval = setInterval(createBug, 5000); // Create a bug every 5 seconds
+    bugInterval = setInterval(createBug, 3000); // Create a bug every 5 seconds
 }
 
 function stopBugAnimation() {
