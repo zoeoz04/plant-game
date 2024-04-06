@@ -72,11 +72,10 @@
     margin-left: 100px;
     margin-top: 100px;
 }
-.bug {
+#Bug-animation {
     width: 20px;
     height: 20px;
     background-color: red;
     border-radius: 50%;
     position: absolute;
-    z-index: 1; /* Ensure bugs appear above the plant */
 }
