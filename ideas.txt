@@ -1,1 +1,35 @@
+TO DO
+make plant objects
+  need to be able to change colors 
+    brown - dead
+    yellow - dying
+    green - healthy 
 
+make timer for round 
+  round 1 - 30 sec
+  round 2 - 60 sec 
+  round 3 - 90 sec 
+  if time runs out - lose automatically - try again 
+
+make fly objects
+  appear on leaf every 5 sec 
+  click to make disappear 
+    
+==========================================
+Plant game 
+
+3 levels
+Easy - hit off bugs 
+Med - hit off bugs, spray water when dying
+Hard - hit off bugs, spray water when dying, feed plant
+
+Grow amt of flowers to pass level
+Easy - 3 flowers
+Med - 6 flowers
+Hard - 9 flowers 
+
+hit off bugs - click 
+spray bugs - drag water to spot
+feed plant - moving mouse back and forth 
+
+To grow flower: no bugs, watered, food 
