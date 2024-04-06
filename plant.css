@@ -2,15 +2,17 @@
     border-style: solid;
     border-width: 3px;
     border-color: black;
-
     width: 650px;
     height: 600px;
-
     margin: auto;
-
 }
 
-
+.plant{
+    display: inline-flex; /* Display plants next to each other */
+    flex-direction: column; /* Stack leaves vertically */
+    position: relative;
+    margin-top: 399px;
+}
 
 .leaf {
     width: 100px;
@@ -32,47 +34,91 @@
     border-style: solid;
     border-width: 2px;
     border-color: black;
-    margin-left: 77px;
-    margin-bottom: -5px;;
+    margin-top: -48px;
 }
 
 .stem{
     width: 5px;
     height: 200px;
     background-color: #008000; 
-    
+    position: absolute;
     border-style: solid;
     border-width: 2px;
     border-color: black;
+    
+}
+
+
+#S1{
     margin-left: 100px;
-    bottom: 0;
 }
-
-
-
-.plant-area {
-    position: relative;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end; 
+#fb1{
+    margin-left: 77px;
 }
-
-
-
 #L1{
     transform: rotate(90deg);
     margin-left: 100px;
 }
 #L2{
-    margin-top: 100px;;
+    margin-top: 100px;
 }
 #L3{
     transform: rotate(90deg);
     margin-left: 100px;
     margin-top: 100px;
 }
+<<<<<<< HEAD
 #Bug-animation {
+=======
+
+#S2{
+    margin-left: 190px;
+}
+#fb2{
+    margin-left: 168px;
+}
+#L5{
+    transform: rotate(90deg);
+    margin-left: 190px;
+}
+#L6{
+    margin-top: 100px;;
+    margin-left: 90px;
+}
+#L7{
+    transform: rotate(90deg);
+    margin-left: 190px;
+    margin-top: 100px;
+}
+#L8{
+    margin-left: 90px;
+}
+
+#S3{
+    margin-left: 185px;
+}
+#fb3{
+    margin-left: 162px;
+}
+#L9{
+    transform: rotate(90deg);
+    margin-left: 185px;
+}
+#L10{
+    margin-top: 100px;
+    margin-left: 85px;
+}
+#L11{
+    transform: rotate(90deg);
+    margin-left: 185px;
+    margin-top: 100px;
+}
+#L12{
+    margin-left: 85px;
+}
+
+.bug {
+>>>>>>> 60e6a047b378367147026d3eca56200c6f6846d3
     width: 20px;
     height: 20px;
     background-color: red;
