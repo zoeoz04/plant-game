@@ -11,11 +11,13 @@
 
 .plant-area{
     box-sizing: border-box;
-    /*border-style: solid;
+    /*
+    border-style: solid;
     border-width: 1px;
-    border-color: rgb(196, 30, 30);*/
+    border-color: rgb(196, 30, 30);
+    */
     width: 650px;
-    height: 400px;
+    height: 253px;
     position: absolute;
     bottom: 0;
 }
