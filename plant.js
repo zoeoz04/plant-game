@@ -5,22 +5,26 @@
         document.getElementById('plant').style.backgroundColor = newColor;
     }
 };*/
-
-function animateBug() {
+var id = null;
+function bugMove() {
+    var container = document.querySelector('.plant-area');
+    var containerRect = container.getBoundingClientRect();
     var bug = document.getElementById('Bug-animation');
-    var pos = 0;
-    var id = setInterval(frame, 10);
-    function frame() {
-        if (pos >= 550) {
+    var pos =0;
+    clearInterval(id);
+    id = setInterval(frame,10);
+    function frame(){
+        if (pos ==350){
             clearInterval(id);
-            bug.style.display = 'none'; // Hide bug after animation
-        } else {
+        }else{
             pos++;
             bug.style.top = pos + 'px';
             bug.style.left = pos + 'px';
         }
+
     }
+    
 }
 
 // Animate the bug after a delay
-setTimeout(animateBug, 5000); // Delay of 3 seconds (3000 milliseconds)
+//setTimeout(animateBug, 5000); // Delay of 3 seconds (3000 milliseconds)
