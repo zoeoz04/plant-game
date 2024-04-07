@@ -47,8 +47,22 @@ function stopBugAnimation() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+    startCountdown();
     startBugAnimation();
 });
 
+function startCountdown() {
+    let timeleft = 30;
+    const countdown1 = document.getElementById('countdown');
+    
+    const interval = setInterval(() => {
+        countdown1.textContent = "00:" + timeleft.toString().padStart(2, '0');
+      
+      timeleft--;
+      if (timeleft < 0 ) {
+        clearInterval(interval);
+      }
+    }, 1000);
+  }
 
 

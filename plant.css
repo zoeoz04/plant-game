@@ -130,14 +130,38 @@
     margin-left: 85px;
 }
 
-.Bug-animation {
-    cursor: pointer;
+.flower {
+    z-index:1;
+    border-radius:100%;
+    /*display:inline-block;*/
+    background-color:#faaa18;
+    
+    height:80px;
+    width:80px;
+    position:absolute;
+    box-shadow:15px 17px #ffe000,
+      -15px 17px #ffe000,
+      -22px -7px #ffe000,
+      0px -22px #ffe000,
+      22px -7px #ffe000;
+    
+    margin-top: -80px;
 }
 
-h1 {
-    color: #008000;
-    font-size: 50px;
-    font-family: "Pixelify Sans", sans-serif;
+#f1{
+    margin-left: 65px;
+}
+
+#f2{
+    margin-left: 155px;
+}
+
+#f3{
+    margin-left: 150px;
+}
+
+.Bug-animation {
+    cursor: pointer;
 }
 
 .popUp {
@@ -191,4 +215,14 @@ h1 {
     border-color: #b5b5b5;
     box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
   }
+
+#countdown{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10px;  
+    font-size: 30px;
+    height: 70px;
+    width: 200px;
+    position: absolute;
+}
 
