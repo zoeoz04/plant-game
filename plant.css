@@ -166,7 +166,7 @@
     cursor: pointer;
 }
 
-.popUp {
+.ScorePopUp {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1000; /* Sit on top */
