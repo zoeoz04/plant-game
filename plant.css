@@ -254,8 +254,11 @@
     margin-left: -10px;  
     font-size: 30px;
     height: 70px;
-    width: 650px;
+    width: 100%;
     position: absolute;
+    top: 8%; /* Position it at the vertical center */
+    left: 44%; /* Position it at the horizontal center */
+    transform: translate(-50%, -50%); /* Center it precisely */
 }
 
   #start{
