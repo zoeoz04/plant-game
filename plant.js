@@ -46,10 +46,12 @@ function stopBugAnimation() {
     clearInterval(bugInterval);
 }
 
+/*
 document.addEventListener('DOMContentLoaded', function() {
     startCountdown();
     startBugAnimation();
 });
+*/
 
 function startCountdown() {
     let timeleft = 30;
@@ -63,6 +65,12 @@ function startCountdown() {
         clearInterval(interval);
       }
     }, 1000);
+    timerEnd();
   }
 
-
+function startGame() {
+    var start = document.getElementById("startPopUp");
+    start.style.display = "none";
+    startCountdown();
+    startBugAnimation();
+}
