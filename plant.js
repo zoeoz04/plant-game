@@ -11,13 +11,12 @@ function createBug() {
     // Change color of each leaf to green
     for (var i = 1; i <= 12; i++) {
         document.getElementById('L' + i).style.backgroundColor = '#008000'; // Green color
-        brownLeaves --;
     }
    
     // Change color of the specified number of leaves to brown
     for (var j = 1; j <= leavesToBrown; j++) {
         document.getElementById('L' + j).style.backgroundColor = '#513918'; // Brown color
-        brownLeaves ++;
+        brownLeaves++;
     }
 
     var container = document.querySelector('.plant-area');
@@ -72,6 +71,8 @@ function startCountdown() {
       timeleft--;
       if (timeleft < 0 ) {
         clearInterval(interval);
+        stopBugAnimation();
+        showScore();
       }
     }, 1000);
     timerEnd();
@@ -83,4 +84,14 @@ function startGame() {
     startBugAnimation();
     startCountdown();
     
+}
+
+function showScore(){
+    var score = bugkill - (brownLeaves);
+    if(score < 0 ){
+        score = 0;
+    }
+    
+    document.getElementById('scoreDisplay').innerText = 'Your Score: ' + score;
+    document.getElementById('scorePopUp').style.display = "block";
 }
