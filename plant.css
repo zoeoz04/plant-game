@@ -238,7 +238,7 @@
     cursor: pointer;
     display: inline-flex;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1rem;
+    font-size: 4vw;
     height: 3em;
     justify-content: center;
     line-height: 1.5;
@@ -254,7 +254,7 @@
     z-index: 1000; /* Sit on top */
     padding: 5%;
     top: 30%;
-    left: 42%;
+    left: 40%;
   }
 
   #start:hover {
