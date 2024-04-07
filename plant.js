@@ -95,3 +95,17 @@ function showScore(){
     document.getElementById('scoreDisplay').innerText = 'Your Score: ' + score;
     document.getElementById('scorePopUp').style.display = "block";
 }
+
+function restartGame() {
+    document.getElementById('scorePopUp').style.display = "none";
+
+    // Remove existing bugs from the screen
+    document.querySelectorAll('.Bug-animation').forEach(bug => bug.remove());
+
+    // Reset leaves to green if necessary
+    for (let i = 1; i <= 12; i++) {
+        document.getElementById('L' + i).style.backgroundColor = '#008000'; // Green color
+    }
+
+    document.getElementById('start').style.display = "block";
+}
