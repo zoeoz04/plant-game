@@ -7,6 +7,8 @@
     margin: auto;
     display: flex;
     position: relative;
+    background-image: url('wall5.jpg');
+    background-size: contain;
 }
 
 .plant-area{
@@ -223,6 +225,16 @@
     font-size: 30px;
     height: 70px;
     width: 200px;
+    position: absolute;
+}
+
+#bug-number{
+    display: grid;
+    justify-content: end;
+    margin-left: -10px;  
+    font-size: 30px;
+    height: 70px;
+    width: 650px;
     position: absolute;
 }
 

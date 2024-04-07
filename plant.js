@@ -1,6 +1,8 @@
 
 var bugInterval = null;
 var count = 0;
+var brownLeaves=0;
+var bugkill =0;
 function createBug() { 
     var bugBrownLimit = 3; // Number of bugs per leaf color change
     
@@ -9,11 +11,13 @@ function createBug() {
     // Change color of each leaf to green
     for (var i = 1; i <= 12; i++) {
         document.getElementById('L' + i).style.backgroundColor = '#008000'; // Green color
+        brownLeaves --;
     }
    
     // Change color of the specified number of leaves to brown
     for (var j = 1; j <= leavesToBrown; j++) {
-        document.getElementById('L' + j).style.backgroundColor = '#A52A2A'; // Brown color
+        document.getElementById('L' + j).style.backgroundColor = '#513918'; // Brown color
+        brownLeaves ++;
     }
 
     var container = document.querySelector('.plant-area');
@@ -33,6 +37,9 @@ function createBug() {
     bug.addEventListener('click', function() {
         bug.style.display = 'none'; // Hide the clicked bug
         count--;
+        bugkill ++;
+        const initBugNum = document.getElementById('bug-number');
+        initBugNum.textContent = bugkill.toString();
     });
   
 }
@@ -49,6 +56,8 @@ function stopBugAnimation() {
 document.addEventListener('DOMContentLoaded', function() {
     startCountdown();
     startBugAnimation();
+    const initBugNum = document.getElementById('bug-number');
+    initBugNum.textContent = bugkill.toString();
 });
 
 function startCountdown() {
