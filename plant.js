@@ -53,12 +53,14 @@ function stopBugAnimation() {
     clearInterval(bugInterval);
 }
 
+/*
 document.addEventListener('DOMContentLoaded', function() {
     startCountdown();
     startBugAnimation();
     const initBugNum = document.getElementById('bug-number');
     initBugNum.textContent = bugkill.toString();
 });
+*/
 
 function startCountdown() {
     let timeleft = 30;
@@ -72,6 +74,13 @@ function startCountdown() {
         clearInterval(interval);
       }
     }, 1000);
+    timerEnd();
   }
 
-
+function startGame() {
+    var start = document.getElementById("start");
+    start.style.display = "none";
+    startBugAnimation();
+    startCountdown();
+    
+}
