@@ -97,6 +97,11 @@ function showScore(){
 }
 
 function restartGame() {
+    bugInterval = null;
+    count = 0;
+    brownLeaves=0;
+    bugkill =0;
+
     document.getElementById('scorePopUp').style.display = "none";
 
     // Remove existing bugs from the screen
@@ -107,5 +112,6 @@ function restartGame() {
         document.getElementById('L' + i).style.backgroundColor = '#008000'; // Green color
     }
 
-    document.getElementById('start').style.display = "block";
+    //document.getElementById('start').style.display = "block";
+    startGame();
 }
