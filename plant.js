@@ -52,15 +52,6 @@ function stopBugAnimation() {
     clearInterval(bugInterval);
 }
 
-/*
-document.addEventListener('DOMContentLoaded', function() {
-    startCountdown();
-    startBugAnimation();
-    const initBugNum = document.getElementById('bug-number');
-    initBugNum.textContent = bugkill.toString();
-});
-*/
-
 function startCountdown() {
     let timeleft = 30;
     const countdown1 = document.getElementById('countdown');
