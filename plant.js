@@ -4,7 +4,7 @@ var count = 0;
 var brownLeaves=0;
 var bugkill =0;
 function createBug() { 
-    var bugBrownLimit = 3; // Number of bugs per leaf color change
+    var bugBrownLimit = 2; // Number of bugs per leaf color change
     
     // Calculate the number of leaves to turn brown based on bugCounter
     var leavesToBrown = Math.floor(count / bugBrownLimit) + (0);
@@ -45,7 +45,7 @@ function createBug() {
 
 function startBugAnimation() {
     createBug(); // Create a bug immediately
-    bugInterval = setInterval(createBug, 3000); // Create a bug every 5 seconds
+    bugInterval = setInterval(createBug, 2000); // Create a bug every 5 seconds
 }
 
 function stopBugAnimation() {
