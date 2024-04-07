@@ -1,36 +1,21 @@
-/*let plant = {
-    color: 'green',
-    changeColor: function(newColor) {
-        this.color = newColor;
-        document.getElementById('plant').style.backgroundColor = newColor;
-    }
-};*/
-/*var id = null;
-function bugMove() {
-    //var container = document.querySelector('.plant-area');
-   // var containerRect = container.getBoundingClientRect();
-    var bug = document.getElementById('Bug-animation');
-    var pos =0;
-    clearInterval(id);
-    id = setInterval(frame,10);
-    function frame(){
-        if (pos ==350){
-            clearInterval(id);
-        }else{
-            pos++;
-            bug.style.top = pos + 'px';
-            bug.style.left = pos + 'px';
-        }
 
-    }
-    
-}
-
-// Animate the bug after a delay
-//setTimeout(animateBug, 5000); // Delay of 3 seconds (3000 milliseconds)*/
 var bugInterval = null;
+var count = 0;
+function createBug() { 
+    var bugBrownLimit = 3; // Number of bugs per leaf color change
+    
+    // Calculate the number of leaves to turn brown based on bugCounter
+    var leavesToBrown = Math.floor(count / bugBrownLimit) + (0);
+    // Change color of each leaf to green
+    for (var i = 1; i <= 12; i++) {
+        document.getElementById('L' + i).style.backgroundColor = '#008000'; // Green color
+    }
+   
+    // Change color of the specified number of leaves to brown
+    for (var j = 1; j <= leavesToBrown; j++) {
+        document.getElementById('L' + j).style.backgroundColor = '#A52A2A'; // Brown color
+    }
 
-function createBug() {
     var container = document.querySelector('.plant-area');
     var bug = document.createElement('div');
     bug.className = 'Bug-animation';
@@ -44,10 +29,12 @@ function createBug() {
     bugImage.style.height = '50px'; // Set the height of the image
     bug.appendChild(bugImage);
     container.appendChild(bug);
-    
+    count ++;
     bug.addEventListener('click', function() {
         bug.style.display = 'none'; // Hide the clicked bug
+        count--;
     });
+  
 }
 
 function startBugAnimation() {
