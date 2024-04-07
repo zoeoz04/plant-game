@@ -45,7 +45,7 @@ function createBug() {
 
 function startBugAnimation() {
     createBug(); // Create a bug immediately
-    bugInterval = setInterval(createBug, 2000); // Create a bug every 5 seconds
+    bugInterval = setInterval(createBug, 1500); // Create a bug every 5 seconds
 }
 
 function stopBugAnimation() {
