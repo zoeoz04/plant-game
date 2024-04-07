@@ -69,7 +69,7 @@ function startCountdown() {
   }
 
 function startGame() {
-    var start = document.getElementById("startPopUp");
+    var start = document.getElementById("start");
     start.style.display = "none";
     startCountdown();
     startBugAnimation();
