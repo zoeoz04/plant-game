@@ -130,6 +130,36 @@
     margin-left: 85px;
 }
 
+.flower {
+    z-index:1;
+    border-radius:100%;
+    /*display:inline-block;*/
+    background-color:#faaa18;
+    
+    height:80px;
+    width:80px;
+    position:absolute;
+    box-shadow:15px 17px #ffe000,
+      -15px 17px #ffe000,
+      -22px -7px #ffe000,
+      0px -22px #ffe000,
+      22px -7px #ffe000;
+    
+    margin-top: -80px;
+}
+
+#f1{
+    margin-left: 65px;
+}
+
+#f2{
+    margin-left: 155px;
+}
+
+#f3{
+    margin-left: 150px;
+}
+
 .Bug-animation {
     cursor: pointer;
 }
