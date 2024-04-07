@@ -171,19 +171,24 @@
     position: fixed; /* Stay in place */
     z-index: 1000; /* Sit on top */
     padding: 5%;
-    top: 25%;
-    left: 30%;
+    /*top: 25%;
+    left: 30%;*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     
     border-style: dashed;
     border-radius: 25px;
 
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: #b4e3b2; 
+    text-align: center;
   }
   
   /* Modal Content */
   .popUpText {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
   }
   
   /* The Close Button */
@@ -211,6 +216,9 @@
     touch-action: manipulation;
     vertical-align: top;
     white-space: nowrap;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   
   .popUpButton:hover {
